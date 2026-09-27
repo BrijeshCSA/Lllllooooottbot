@@ -347,6 +347,7 @@ def check_credit(user_id):
             update_user(user_id, credit_amount=0, credit_due=None)
             return False
     return True
+    
   def cmd_help(user_id, peer_id):
     text = (
         "📋 КОМАНДЫ УЧАСТНИКОВ:\n"
