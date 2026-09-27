@@ -10,7 +10,7 @@ import sys
 import os
 import re
 
-TOKEN = 'vk1.a.sZoz5vWP_ZBE1ZoBQDS_b1uTZuVZKecxonHgJdZID0tNxt8UbbaWL9yBfIsjBEg8CCdrz688iZA4Fyiy_m2pzcknf_3B_P5Y8mLrMX468-81AmpqurptAbvawu1Yp7lwl49dIzhs9W6TAgUBCKz8p7NWAyduKGbCY6XSr9vfBHm0TXhQjKGBH98bFVJ8UyzoLaHGcub9AG18104C5E4Otw'
+TOKEN = 'vk1.a.b389VbbeSccWuv-W442kgk1zAf286xKurmvAkmVr_lxjaBpICq9xytmlR8zXovckiA1mSVeaDD8m3BVeUw4dICdg36J9dovacH_r6z4e2Si_TBmdoTstjoYZ8mISCuHi1NeGX4YY3g_dp3iWsoHY7t2C6Rmvon_eB5eJMTYglwHpEG_2gO6MGDStWQ_iyMzpIynqsNWxWfPN03Bztariyw'
 CREATOR_ID = 1085788257
 BOT_GROUP_ID = 241262855
 
@@ -128,6 +128,7 @@ def get_all_roles():
     for role_key, role_name, priority in cursor.fetchall():
         builtin[role_key] = (role_name, priority)
     return builtin
+    
   def generate_houses():
     types = ["Квартира", "Дом", "Вилла", "Пентхаус", "Таунхаус", "Коттедж", "Особняк", "Усадьба", "Апартаменты", "Шале"]
     levels = ["Эконом", "Стандарт", "Комфорт", "Бизнес", "Премиум", "Люкс", "Элит", "Делюкс", "Эксклюзив", "Королевский"]
