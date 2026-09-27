@@ -124,12 +124,12 @@ def get_all_roles():
         'admin': ('Администратор', 85), 'tech': ('Тех. специалист', 88), 'dev': ('Разработчик', 90),
         'deputy': ('Зам.владельца', 95), 'owner': ('Владелец', 100),
     }
-    cursor.execute('SELECT role_key, role_name, priority FROM custom_roles')
+        cursor.execute('SELECT role_key, role_name, priority FROM custom_roles')
     for role_key, role_name, priority in cursor.fetchall():
         builtin[role_key] = (role_name, priority)
     return builtin
-    
-  def generate_houses():
+
+def generate_houses():
     types = ["Квартира", "Дом", "Вилла", "Пентхаус", "Таунхаус", "Коттедж", "Особняк", "Усадьба", "Апартаменты", "Шале"]
     levels = ["Эконом", "Стандарт", "Комфорт", "Бизнес", "Премиум", "Люкс", "Элит", "Делюкс", "Эксклюзив", "Королевский"]
     extras = ["Остров", "Планета", "Вселенная", "Галактика", "Мультивселенная"]
